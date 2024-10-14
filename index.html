@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Tabla Avanzada</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+            <th>Ocupación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>28</td>
+            <td>Ciudad de México</td>
+            <td>Ingeniero</td>
+          </tr>
+          <tr>
+            <td>María López</td>
+            <td>32</td>
+            <td>Guadalajara</td>
+            <td>Doctora</td>
+          </tr>
+          <tr>
+            <td>Carlos Méndez</td>
+            <td>25</td>
+            <td>Monterrey</td>
+            <td>Desarrollador</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Formulario</h2>
+      <form action="#" method="post">
+        <label for="nombre">1. Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+
+        <label for="email">2. Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="opciones">3. Selecciona tu nivel de estudios:</label>
+        <select id="opciones" name="opciones">
+          <option value="secundaria">Secundaria</option>
+          <option value="bachillerato">Bachillerato</option>
+          <option value="universidad">Universidad</option>
+          <option value="postgrado">Postgrado</option></select
+        ><br />
+
+        <label>4. ¿Qué lenguajes de programación conoces?</label><br />
+        <input type="checkbox" name="lenguajes" value="html" /> HTML<br />
+        <input type="checkbox" name="lenguajes" value="css" /> CSS<br />
+        <input type="checkbox" name="lenguajes" value="javascript" />
+        JavaScript<br />
+        <input type="checkbox" name="lenguajes" value="python" /> Python<br />
+
+        <label for="experiencia"
+          >5. ¿Cuánta experiencia tienes en desarrollo web?</label
+        ><br />
+        <input type="radio" name="experiencia" value="nada" /> Ninguna<br />
+        <input type="radio" name="experiencia" value="poco" /> Poco<br />
+        <input type="radio" name="experiencia" value="mucho" /> Mucho<br />
+
+        <label for="mensaje">6. Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea
+        ><br />
+
+        <label for="color">7. Elige un color favorito:</label>
+        <input type="color" id="color" name="color" /><br />
+
+        <label for="fecha">8. Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha" /><br />
+
+        <label for="archivo">9. Sube un archivo:</label>
+        <input type="file" id="archivo" name="archivo" /><br />
+
+        <label for="numero">10. Ingresa un número entre 1 y 100:</label>
+        <input
+          type="number"
+          id="numero"
+          name="numero"
+          min="1"
+          max="100"
+        /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
